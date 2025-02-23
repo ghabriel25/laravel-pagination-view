@@ -19,7 +19,7 @@ Laravel version 10 or 11
 composer require ghabriel/laravel-pagination-view
 ```
 ## Usage
-After installation, you must publish the resource that suits your need
+After installation, publish the resource that suits your need
 ### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-fomantic-ui
@@ -76,6 +76,15 @@ class AppServiceProvider extends ServiceProvider
   }
 }
 ```
+
+If you want to publish all views in one go
+```
+php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-all
+```
+or
+```
+php artisan vendor:publish --tag=pagination-view-all
+```
 ## Initialization
 Example:
 ```php
@@ -104,11 +113,11 @@ In `welcome.blade.php`
 ## Screenshots
 Here are the screenshot for `paginate()` and `simplePaginate()`
 ### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
-![between pages](https://github.com/user-attachments/assets/d3d3562d-51e1-4d48-9116-cec057534377)
-![simple between pages](https://github.com/user-attachments/assets/e8ba6942-986b-46ee-9b4f-e9327111fc1d)
+![between pages](https://github.com/user-attachments/assets/37cb8b88-b40c-4b4b-88a2-d80cd2dcbcf0)
+![simple between pages](https://github.com/user-attachments/assets/667c2a8d-707e-4179-a8bf-af7c05f239ef)
 ### [Bulma](https://bulma.io/)
-![between pages](https://github.com/user-attachments/assets/11e1fb07-48aa-4ed1-bbb9-49e17e54abe1)
-![simple between pages](https://github.com/user-attachments/assets/5f0f4c65-942c-476b-9483-b670c691a4fe)
+![between pages](https://github.com/user-attachments/assets/35dedae3-ee1a-4de0-afbc-c2bff99379d9)
+![simple between pages](https://github.com/user-attachments/assets/e2493917-3b81-4065-8dc5-c94b6735d8ad)
 ## Contributing
 Feel free to suggest changes, ask for new features or fix bugs yourself. We're sure there are still a lot of improvements that could be made, and we would be very happy to merge useful pull requests. Thanks!
 
