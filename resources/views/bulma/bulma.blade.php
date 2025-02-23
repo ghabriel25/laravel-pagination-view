@@ -5,7 +5,7 @@
 
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
-            <a class="pagination-previous is-disabled">
+            <a class="pagination-previous is-disabled" aria-disabled="true">
                 {!! __('pagination.previous') !!}
             </a>
         @else
@@ -20,7 +20,7 @@
                 {!! __('pagination.next') !!}
             </a>
         @else
-            <a class="pagination-next is-disabled">
+            <a class="pagination-next is-disabled" aria-disabled="true">
                 {!! __('pagination.next') !!}
             </a>
         @endif
