@@ -1,0 +1,43 @@
+{
+    "name": "ghabriel/laravel-pagination-view",
+    "description": "Provide extended pagination view for laravel",
+    "keywords": [
+        "ghabriel",
+        "laravel",
+        "pagination",
+        "view"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rihulfa Akbar",
+            "email": "rihulfaakbar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3.0",
+        "laravel/framework": "^10|^11"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ghabriel\\PaginationView\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ghabriel\\PaginationView\\PaginationViewServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "preferred-install": "dist"
+    }
+}
