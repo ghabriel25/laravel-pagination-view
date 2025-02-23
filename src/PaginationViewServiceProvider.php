@@ -9,17 +9,21 @@ class PaginationViewServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
+            $target = resource_path('views/vendor/pagination');
+            $fomanticui = __DIR__.'/../resources/views/fomanticui';
+            $bulma = __DIR__.'/../resources/views/bulma';
+
             $this->publishes([
-                __DIR__.'/../resources/views/fomanticui' => resource_path('views/vendor/pagination'),
-                __DIR__.'/../resources/views/bulma' => resource_path('views/vendor/pagination'),
+                $fomanticui => $target,
+                $bulma => $target,
             ], 'pagination-view-all');
 
             $this->publishes([
-                __DIR__.'/../resources/views/fomanticui' => resource_path('views/vendor/pagination'),
+                $fomanticui => $target,
             ], 'pagination-view-fomantic-ui');
 
             $this->publishes([
-                __DIR__.'/../resources/views/bulma' => resource_path('views/vendor/pagination'),
+                $bulma => $target,
             ], 'pagination-view-bulma');
         }
     }
