@@ -1,4 +1,8 @@
 # Simple, customizable pagination view for Laravel
+[![Latest Version](https://img.shields.io/packagist/v/ghabriel/laravel-pagination-view.svg)](https://packagist.org/packages/ghabriel/laravel-pagination-view)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
+[![Total Downloads](https://badgen.net/packagist/dt/ghabriel/laravel-pagination-view)](https://packagist.org/packages/ghabriel/laravel-pagination-view)
+
 This package provide extended pagination view for laravel framework
 ## Features
 Pagination view template using:
