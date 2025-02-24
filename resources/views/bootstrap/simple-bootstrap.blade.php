@@ -1,37 +1,29 @@
 @if ($paginator->hasPages())
-    <div class="row">
+    <div class="clearfix">
         @if ($paginator->onFirstPage())
-            <div class="col">
-                <button class="btn btn-outline-primary"
-                        aria-disabled="true"
-                        disabled>
-                    {!! __('pagination.previous') !!}
-                </button>
-            </div>
+            <button class="btn btn-outline-primary float-start"
+                    aria-disabled="true"
+                    disabled>
+                {!! __('pagination.previous') !!}
+            </button>
         @else
-            <div class="col">
-                <a class="btn btn-outline-primary"
-                   href="{{ $paginator->previousPageUrl() }}"
-                   role="button">
-                    {!! __('pagination.previous') !!}
-                </a>
-            </div>
+            <a class="btn btn-outline-primary float-start"
+               href="{{ $paginator->previousPageUrl() }}"
+               role="button">
+                {!! __('pagination.previous') !!}
+            </a>
         @endif
 
         @if ($paginator->hasMorePages())
-            <div class="col">
-                <a class="float-end btn btn-outline-primary" href="{{ $paginator->nextPageUrl() }}">
-                    {!! __('pagination.next') !!}
-                </a>
-            </div>
+            <a class="btn btn-outline-primary float-end" href="{{ $paginator->nextPageUrl() }}">
+                {!! __('pagination.next') !!}
+            </a>
         @else
-            <div class="col">
-                <button class="float-end btn btn-outline-primary"
-                        aria-disabled="true"
-                        disabled>
-                    {!! __('pagination.next') !!}
-                </button>
-            </div>
+            <button class="btn btn-outline-primary float-end"
+                    aria-disabled="true"
+                    disabled>
+                {!! __('pagination.next') !!}
+            </button>
         @endif
     </div>
 @endif
