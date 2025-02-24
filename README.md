@@ -1,6 +1,6 @@
 # Simple, customizable pagination view for Laravel
 This package provide extended pagination view for laravel framework
-## Feature
+## Features
 Pagination view template using:
 1. [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
 2. [Bootstrap](https://getbootstrap.com/)
@@ -29,7 +29,9 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-fomantic-ui
 ```
-This will create 2 files in `resources/views/vendor/pagination`; `fomantic-ui.blade.php` and `simple-fomantic-ui.blade.php`. 
+This will create 2 files in `resources/views/vendor/pagination`; 
+- `fomantic-ui.blade.php`
+- `simple-fomantic-ui.blade.php`. 
 
 After that edit your `App\Providers\AppServiceProvider`
 ```php
@@ -57,7 +59,9 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bootstrap
 ```
-This will create 2 files in `resources/views/pagination`: `bootstrap.blade.php` and `simple-bootstrap.blade.php`.
+This will create 2 files in `resources/views/pagination`: 
+- `bootstrap.blade.php`
+- `simple-bootstrap.blade.php`.
 
 After that edit your `App\Providers\AppServiceProvider`
 ```php
@@ -85,7 +89,9 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bulma
 ```
-This will create 2 files in `resources/views/pagination`: `bulma.blade.php` and `simple-bulma.blade.php`.
+This will create 2 files in `resources/views/pagination`: 
+- `bulma.blade.php`
+- `simple-bulma.blade.php`.
 
 After that edit your `App\Providers\AppServiceProvider`
 ```php
