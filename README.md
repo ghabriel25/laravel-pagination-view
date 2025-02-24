@@ -19,6 +19,8 @@ composer require ghabriel/laravel-pagination-view
 ```
 ## Usage
 After installation, publish the resource that suits your need
+> **Note:** Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling and responsiveness!
+
 ### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-fomantic-ui
