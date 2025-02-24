@@ -19,7 +19,10 @@ class PaginationViewServiceProvider extends ServiceProvider
 
             // Publish all views under a single tag
             $this->publishes(
-                array_map(fn ($path) => [$path => $target], $views),
+                array_combine(
+                    array_values($views), // Use the original values as keys
+                    array_map(fn () => $target, $views)
+                ),
                 'pagination-view-all'
             );
 
