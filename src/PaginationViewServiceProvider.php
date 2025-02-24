@@ -17,14 +17,14 @@ class PaginationViewServiceProvider extends ServiceProvider
                 'bootstrap' => __DIR__.'/../resources/views/bootstrap',
             ];
 
-            // Publish all views under a single tag
-            $this->publishes(
-                array_combine(
-                    array_values($views), // Use the original values as keys
-                    array_map(fn () => $target, $views)
-                ),
-                'pagination-view-all'
+            // Create an array where the original view paths are keys and the target path is the value
+            $publishPaths = array_fill_keys(
+                array_values($views),
+                $target
             );
+
+            // Publish all views under a single tag
+            $this->publishes($publishPaths, 'pagination-view-all');
 
             // Publish individual views under specific tags
             foreach ($views as $key => $path) {
