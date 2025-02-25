@@ -14,7 +14,7 @@ class PaginationViewServiceProvider extends ServiceProvider
             $target = resource_path('views/vendor/pagination');
 
             // Get views path
-            $directory = __DIR__.'/../resources/views';
+            $directory = __DIR__ . '/../resources/views';
 
             // Get all folders inside views
             $folders = File::directories($directory);
@@ -23,8 +23,12 @@ class PaginationViewServiceProvider extends ServiceProvider
 
             // Create associative array for all vendors, vendor_name => folder_path
             foreach ($folders as $folder) {
-                $folderName = basename($folder);
-                $views[$folderName] = "$directory/$folderName";
+                $vendorName = basename($folder);
+                $source = $directory . DIRECTORY_SEPARATOR . $vendorName;
+
+                if (is_dir($source)) {
+                    $views[$vendorName] = $source;
+                }
             }
 
             // Create an array where the original view paths are keys and the target path is the value
