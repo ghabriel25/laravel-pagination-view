@@ -2,7 +2,7 @@
 [![Latest version](https://img.shields.io/packagist/v/ghabriel/laravel-pagination-view)](https://packagist.org/packages/ghabriel/laravel-pagination-view)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE.md)
 ![Github last commit](https://img.shields.io/github/last-commit/ghabriel25/laravel-pagination-view)
-[![Packagist downloads](https://img.shields.io/packagist/dm/ghabriel/laravel-pagination-view)](https://packagist.org/packages/ghabriel/laravel-pagination-view/stats)
+[![Packagist downloads](https://img.shields.io/packagist/dt/ghabriel/laravel-pagination-view)](https://packagist.org/packages/ghabriel/laravel-pagination-view/stats)
 
 This package provide extended pagination view for laravel framework.
 ## Features
