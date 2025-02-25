@@ -1,9 +1,10 @@
 # Simple, customizable pagination view for Laravel
-[![Latest Version](https://img.shields.io/packagist/v/ghabriel/laravel-pagination-view.svg)](https://packagist.org/packages/ghabriel/laravel-pagination-view)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
-[![Total Downloads](https://badgen.net/packagist/dt/ghabriel/laravel-pagination-view)](https://packagist.org/packages/ghabriel/laravel-pagination-view)
+[![Latest version](https://img.shields.io/packagist/v/ghabriel/laravel-pagination-view)](https://packagist.org/packages/ghabriel/laravel-pagination-view)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE.md)
+![Github last commit](https://img.shields.io/github/last-commit/ghabriel25/laravel-pagination-view)
+[![Packagist downloads](https://img.shields.io/packagist/dm/ghabriel/laravel-pagination-view)](https://packagist.org/packages/ghabriel/laravel-pagination-view/stats)
 
-This package provide extended pagination view for laravel framework
+This package provide extended pagination view for laravel framework.
 ## Features
 Pagination view template using:
 1. [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
