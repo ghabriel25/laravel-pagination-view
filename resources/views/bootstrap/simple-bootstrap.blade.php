@@ -1,5 +1,6 @@
 @if ($paginator->hasPages())
-    <div class="clearfix">
+    <div class="d-grid gap-2 d-sm-block clearfix">
+        {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
             <button class="btn btn-outline-primary float-start"
                     aria-disabled="true"
@@ -13,7 +14,7 @@
                 {!! __('pagination.previous') !!}
             </a>
         @endif
-
+        {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
             <a class="btn btn-outline-primary float-end" href="{{ $paginator->nextPageUrl() }}">
                 {!! __('pagination.next') !!}
