@@ -16,7 +16,7 @@ Pagination view template using:
 4. [Initialization](#initialization)
 5. [Screenshots](#screenshots)
 ## Requirement
-Laravel version 10, 11 and 12
+Laravel version 10+
 ## Installation
 ```
 composer require ghabriel/laravel-pagination-view
