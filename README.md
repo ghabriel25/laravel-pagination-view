@@ -1,3 +1,4 @@
+![laravel](https://github.com/user-attachments/assets/c359c75a-1372-475d-8390-6867ce8b98dd)
 # Simple, customizable pagination view for Laravel
 [![Latest version](https://img.shields.io/packagist/v/ghabriel/laravel-pagination-view)](https://packagist.org/packages/ghabriel/laravel-pagination-view)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE.md)
