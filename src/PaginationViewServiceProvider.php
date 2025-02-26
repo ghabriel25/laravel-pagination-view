@@ -11,7 +11,7 @@ class PaginationViewServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             // Set the target path
-            $target = resource_path('views/vendor/pagination');
+            $target = $this->app->resourcePath('views/vendor/pagination');
 
             // Get views path
             $directory = __DIR__ . '/../resources/views';
