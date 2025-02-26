@@ -41,10 +41,10 @@ class PaginationViewServiceProvider extends ServiceProvider
             $this->publishes($publishPaths, 'pagination-view-all');
 
             // Publish individual views under specific tags
-            foreach ($views as $key => $path) {
+            foreach ($views as $vendor => $path) {
                 $this->publishes(
                     [$path => $target],
-                    "pagination-view-$key"
+                    "pagination-view-$vendor"
                 );
             }
         }
