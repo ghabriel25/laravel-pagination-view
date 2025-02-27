@@ -15,8 +15,14 @@ Pagination view template using:
 1. [Requirement](#requirement)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Initialization](#initialization)
-5. [Screenshots](#screenshots)
+   - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui)
+   - [Bootstrap](#bootstrap)
+   - [Bulma](#bulma)
+5. [Initialization](#initialization)
+6. [Screenshots](#screenshots)
+   - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui-1)
+   - [Bootstrap](#bootstrap-1)
+   - [Bulma](#bulma-1)
 ## Requirement
 Laravel version 10+
 ## Installation
