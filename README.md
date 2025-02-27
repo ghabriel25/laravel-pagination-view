@@ -24,22 +24,12 @@ Laravel version 10+
 composer require ghabriel/laravel-pagination-view
 ```
 ## Usage
-After installation, publish the resource that suits your need
 > **Note:** Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling!
+> 
+> All published views are located in `resources/views/vendor/pagination`
 
 ### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
-```
-php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-fomantic-ui
-```
-or
-```
-php artisan vendor:publish --tag=pagination-view-fomantic-ui
-```
-This will create 2 files in `resources/views/vendor/pagination`; 
-- `fomantic-ui.blade.php`
-- `simple-fomantic-ui.blade.php`. 
-
-After that edit your `App\Providers\AppServiceProvider`
+Edit your `App\Providers\AppServiceProvider`
 ```php
 <?php
 
@@ -52,12 +42,41 @@ class AppServiceProvider extends ServiceProvider
 {
   public function boot(): void
   {
-    Paginator::defaultView('vendor.pagination.fomantic-ui');
-    Paginator::defaultSimpleView('vendor.pagination.simple-fomantic-ui');
+    Paginator::defaultView('pagination::fomantic-ui');
+    Paginator::defaultSimpleView('pagination::simple-fomantic-ui');
   }
 }
 ```
+
+If you want to customize the view,
+```
+php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-fomanticui
+```
+or
+```
+php artisan vendor:publish --tag=pagination-view-fomanticui
+```
 ### [Bootstrap](https://getbootstrap.com/)
+Edit your `App\Providers\AppServiceProvider`
+```php
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+  public function boot(): void
+  {
+    Paginator::defaultView('pagination::bootstrap');
+    Paginator::defaultSimpleView('pagination::simple-bootstrap');
+  }
+}
+```
+
+If you want to customize the view,
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-bootstrap
 ```
@@ -65,11 +84,8 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bootstrap
 ```
-This will create 2 files in `resources/views/pagination`: 
-- `bootstrap.blade.php`
-- `simple-bootstrap.blade.php`.
-
-After that edit your `App\Providers\AppServiceProvider`
+### [Bulma](https://bulma.io/)
+Edit your `App\Providers\AppServiceProvider`
 ```php
 <?php
 
@@ -82,12 +98,13 @@ class AppServiceProvider extends ServiceProvider
 {
   public function boot(): void
   {
-    Paginator::defaultView('vendor.pagination.bootstrap');
-    Paginator::defaultSimpleView('vendor.pagination.simple-bootstrap');
+    Paginator::defaultView('pagination::bulma');
+    Paginator::defaultSimpleView('pagination::simple-bulma');
   }
 }
 ```
-### [Bulma](https://bulma.io/)
+
+If you want to customize the view,
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-bulma
 ```
@@ -95,30 +112,10 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bulma
 ```
-This will create 2 files in `resources/views/pagination`: 
-- `bulma.blade.php`
-- `simple-bulma.blade.php`.
 
-After that edit your `App\Providers\AppServiceProvider`
-```php
-<?php
+---
 
-namespace App\Providers;
-
-use Illuminate\Pagination\Paginator;
-use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-  public function boot(): void
-  {
-    Paginator::defaultView('vendor.pagination.bulma');
-    Paginator::defaultSimpleView('vendor.pagination.simple-bulma');
-  }
-}
-```
-
-If you want to publish all views in one go
+#### Publish All Views
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-all
 ```
