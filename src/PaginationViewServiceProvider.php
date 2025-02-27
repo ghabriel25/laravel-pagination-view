@@ -19,11 +19,8 @@ class PaginationViewServiceProvider extends ServiceProvider
 
         // Create associative array for all vendors, vendor_name => folder_path
         foreach ($folders as $folder) {
-            $vendorName = basename($folder);
-            $source = $directory . DIRECTORY_SEPARATOR . $vendorName;
-
-            if (is_dir($source)) {
-                $views[$vendorName] = $source;
+            if (is_dir($folder)) {
+                $views[basename($folder)] = $folder;
             }
         }
 
