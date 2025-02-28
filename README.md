@@ -28,7 +28,7 @@ Pagination view template using:
 Laravel version 10+
 ## Installation
 ```
-composer require ghabriel/laravel-pagination-view
+composer require ghabriel25/laravel-pagination-view
 ```
 ## Usage
 > **Note:** Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling!
