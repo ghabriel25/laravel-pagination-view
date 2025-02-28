@@ -38,4 +38,15 @@ class PaginationView extends Paginator
         static::defaultView('pagination::bulma');
         static::defaultSimpleView('pagination::simple-bulma');
     }
+
+    /**
+     * Indicates that Cirrus should be used as the default view.
+     *
+     * @return void
+     */
+    public static function cirrusView()
+    {
+        static::defaultView('pagination::cirrus');
+        static::defaultSimpleView('pagination::simple-cirrus');
+    }
 }
