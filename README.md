@@ -5,15 +5,16 @@
 ![Github last commit](https://img.shields.io/github/last-commit/ghabriel25/laravel-pagination-view)
 [![Packagist downloads](https://img.shields.io/packagist/dt/ghabriel25/laravel-pagination-view?color=66ff00)](https://packagist.org/packages/ghabriel25/laravel-pagination-view/stats)
 
-This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com), [Bootstrap](https://getbootstrap.com), [Bulma](https://bulma.io) and other CSS frameworks(coming soon). Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
+This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com/), [Bootstrap](https://getbootstrap.com/), [Bulma](https://bulma.io/) and [Cirrus](https://cirrus-ui.com/). Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
 
 https://packagist.org/packages/ghabriel25/laravel-pagination-view
 
 ## Features
 Pagination view template using:
-1. [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
+1. [Fomantic UI](https://fomantic-ui.com/) (Semantic UI)
 2. [Bootstrap](https://getbootstrap.com/)
 3. [Bulma](https://bulma.io/)
+4. [Cirrus](https://cirrus-ui.com/)
 ## Table of contents
 1. [Requirement](#requirement)
 2. [Installation](#installation)
@@ -21,11 +22,13 @@ Pagination view template using:
    - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui)
    - [Bootstrap](#bootstrap)
    - [Bulma](#bulma)
+   - [Cirrus](#cirrus)
 5. [Initialization](#initialization)
 6. [Screenshots](#screenshots)
    - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui-1)
    - [Bootstrap](#bootstrap-1)
    - [Bulma](#bulma-1)
+   - [Cirrus](#cirrus-1)
 ## Requirement
 Laravel version 10+
 ## Installation
@@ -170,6 +173,50 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bulma
 ```
+### [Cirrus](https://fomantic-ui.com](https://cirrus-ui.com/))
+Edit your `App\Providers\AppServiceProvider`
+```php
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+  public function boot(): void
+  {
+    Paginator::defaultView('pagination::cirrus');
+    Paginator::defaultSimpleView('pagination::simple-cirrus');
+  }
+}
+```
+You could also directly use `Ghabriel\PaginationView\PaginationView` class
+```php
+<?php
+
+namespace App\Providers;
+
+use Ghabriel\PaginationView\PaginationView;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        PaginationView::cirrusView();
+    }
+}
+```
+If you want to customize the view,
+```
+php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-cirrus
+```
+or
+```
+php artisan vendor:publish --tag=pagination-view-cirrus
+```
 
 ---
 
@@ -217,5 +264,8 @@ Here are the screenshot for `paginate()` and `simplePaginate()`
 ### [Bulma](https://bulma.io/)
 ![between pages](https://github.com/user-attachments/assets/35dedae3-ee1a-4de0-afbc-c2bff99379d9)
 ![simple between pages](https://github.com/user-attachments/assets/e2493917-3b81-4065-8dc5-c94b6735d8ad)
+### [Cirrus](https://cirrus-ui.com/)
+![between](https://github.com/user-attachments/assets/e1e74add-c615-462a-8a99-529afc695756)
+![simple](https://github.com/user-attachments/assets/4d2cb0f7-b17b-4d0a-9154-7a8ebc971336)
 ## Contributing
 Feel free to suggest changes, ask for new features or fix bugs yourself. We're sure there are still a lot of improvements that could be made, and we would be very happy to merge useful pull requests. Thanks!
