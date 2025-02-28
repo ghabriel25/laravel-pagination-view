@@ -198,11 +198,11 @@ Route::get('/', function () {
 ```
 In `welcome.blade.php`
 ```blade
-<li>
+<ul>
   @foreach($users as $user)
     <li>{{ $user->name }}</li>
   @endforeach
-</li>
+</ul>
 {{ $users->links() }}
 {{-- or {{ $users->onEachSide(1)->links() }} --}}
 ```
