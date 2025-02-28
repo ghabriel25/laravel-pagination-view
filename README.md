@@ -36,7 +36,7 @@ composer require ghabriel25/laravel-pagination-view
 > **Note:** Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling!
 > 
 
-> All published views are located in `resources/views/vendor/pagination`
+> **Info:** All published views are located in `resources/views/vendor/pagination`
 
 ### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
 Edit your `App\Providers\AppServiceProvider`
