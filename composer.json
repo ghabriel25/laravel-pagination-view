@@ -6,7 +6,11 @@
         "ghabriel25",
         "laravel",
         "pagination",
-        "view"
+        "view",
+        "fomantic-ui",
+        "bootstrap",
+        "bulma",
+        "cirrus-ui"
     ],
     "license": "MIT",
     "authors": [
