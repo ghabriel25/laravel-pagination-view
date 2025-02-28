@@ -1,9 +1,9 @@
 ![laravel](https://github.com/user-attachments/assets/c359c75a-1372-475d-8390-6867ce8b98dd)
 # Simple, customizable pagination view for Laravel
-[![Latest version](https://img.shields.io/packagist/v/ghabriel/laravel-pagination-view)](https://packagist.org/packages/ghabriel/laravel-pagination-view)
+[![Latest version](https://img.shields.io/packagist/v/ghabriel25/laravel-pagination-view)](https://packagist.org/packages/ghabriel25/laravel-pagination-view)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE.md)
 ![Github last commit](https://img.shields.io/github/last-commit/ghabriel25/laravel-pagination-view)
-[![Packagist downloads](https://img.shields.io/packagist/dt/ghabriel/laravel-pagination-view?color=66ff00)](https://packagist.org/packages/ghabriel/laravel-pagination-view/stats)
+[![Packagist downloads](https://img.shields.io/packagist/dt/ghabriel25/laravel-pagination-view?color=66ff00)](https://packagist.org/packages/ghabriel25/laravel-pagination-view/stats)
 
 This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com), [Bootstrap](https://getbootstrap.com), [Bulma](https://bulma.io) and other CSS frameworks. Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
 
