@@ -22,7 +22,7 @@ class PaginationView extends Paginator
      *
      * @return void
      */
-    public static function bootstrapView()
+    public static function bootstrapView(): void
     {
         static::defaultView('pagination::bootstrap');
         static::defaultSimpleView('pagination::simple-bootstrap');
@@ -33,7 +33,7 @@ class PaginationView extends Paginator
      *
      * @return void
      */
-    public static function bulmaView()
+    public static function bulmaView(): void
     {
         static::defaultView('pagination::bulma');
         static::defaultSimpleView('pagination::simple-bulma');
