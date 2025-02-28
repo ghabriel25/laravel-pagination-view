@@ -7,6 +7,8 @@
 
 This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com), [Bootstrap](https://getbootstrap.com), [Bulma](https://bulma.io) and other CSS frameworks. Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
 
+https://packagist.org/packages/ghabriel25/laravel-pagination-view
+
 ## Features
 Pagination view template using:
 1. [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
