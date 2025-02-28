@@ -14,6 +14,7 @@
                 {!! __('pagination.previous') !!}
             </a>
         @endif
+
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
             <a class="btn btn-outline-primary float-end" href="{{ $paginator->nextPageUrl() }}">
