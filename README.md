@@ -5,7 +5,8 @@
 ![Github last commit](https://img.shields.io/github/last-commit/ghabriel25/laravel-pagination-view)
 [![Packagist downloads](https://img.shields.io/packagist/dt/ghabriel/laravel-pagination-view?color=66ff00)](https://packagist.org/packages/ghabriel/laravel-pagination-view/stats)
 
-This package provide extended pagination view for laravel framework.
+This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com), [Bootstrap](https://getbootstrap.com), [Bulma](https://bulma.io) and other CSS frameworks. Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
+
 ## Features
 Pagination view template using:
 1. [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
