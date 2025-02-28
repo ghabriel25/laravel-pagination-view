@@ -33,6 +33,7 @@ composer require ghabriel25/laravel-pagination-view
 ## Usage
 > **Note:** Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling!
 > 
+
 > All published views are located in `resources/views/vendor/pagination`
 
 ### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
@@ -54,7 +55,23 @@ class AppServiceProvider extends ServiceProvider
   }
 }
 ```
+You could also directly use `Ghabriel\PaginationView\PaginationView` class
+```php
+<?php
 
+namespace App\Providers;
+
+use Ghabriel\PaginationView\PaginationView;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        PaginationView::fomanticuiView();
+    }
+}
+```
 If you want to customize the view,
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-fomanticui
@@ -82,7 +99,23 @@ class AppServiceProvider extends ServiceProvider
   }
 }
 ```
+You could also directly use `Ghabriel\PaginationView\PaginationView` class
+```php
+<?php
 
+namespace App\Providers;
+
+use Ghabriel\PaginationView\PaginationView;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        PaginationView::bootstrapView();
+    }
+}
+```
 If you want to customize the view,
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-bootstrap
@@ -110,7 +143,23 @@ class AppServiceProvider extends ServiceProvider
   }
 }
 ```
+You could also directly use `Ghabriel\PaginationView\PaginationView` class
+```php
+<?php
 
+namespace App\Providers;
+
+use Ghabriel\PaginationView\PaginationView;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        PaginationView::bulmaView();
+    }
+}
+```
 If you want to customize the view,
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-bulma
