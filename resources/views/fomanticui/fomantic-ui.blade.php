@@ -1,12 +1,12 @@
 @if ($paginator->hasPages())
-    <div class="ui pagination menu" role="navigation">
+    <div class="ui fluid buttons" role="navigation">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
-            <div class="item disabled" aria-disabled="true">
+            <div class="ui basic button disabled" aria-disabled="true">
                 {!! __('pagination.previous') !!}
             </div>
         @else
-            <a class="item"
+            <a class="ui basic button"
                href="{{ $paginator->previousPageUrl() }}"
                rel="prev">
                 {!! __('pagination.previous') !!}
@@ -17,7 +17,7 @@
         @foreach ($elements as $element)
             {{-- "Three Dots" Separator --}}
             @if (is_string($element))
-                <div class="item disabled" aria-disabled="true">
+                <div class="ui basic button disabled" aria-disabled="true">
                     {{ $element }}
                 </div>
             @endif
@@ -26,11 +26,11 @@
             @if (is_array($element))
                 @foreach ($element as $page => $url)
                     @if ($page == $paginator->currentPage())
-                        <div class="active item" aria-current="page">
+                        <div class="ui active button" aria-current="page">
                             {{ $page }}
                         </div>
                     @else
-                        <a class="item" href="{{ $url }}">
+                        <a class="ui basic button" href="{{ $url }}">
                             {{ $page }}
                         </a>
                     @endif
@@ -40,13 +40,13 @@
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
-            <a class="item"
+            <a class="ui basic button"
                href="{{ $paginator->nextPageUrl() }}"
                rel="next">
                 {!! __('pagination.next') !!}
             </a>
         @else
-            <div class="item disabled" aria-disabled="true">
+            <div class="ui basic button disabled" aria-disabled="true">
                 {!! __('pagination.next') !!}
             </div>
         @endif
