@@ -1,5 +1,5 @@
 @if ($paginator->hasPages())
-    <div class="ui fluid wrapping spaced buttons" role="navigation">
+    <div class="ui compact wrapping spaced buttons" role="navigation">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
             <div class="ui basic button disabled" aria-disabled="true">
