@@ -3,11 +3,11 @@
         {{-- Previous Page Link --}}
         <div class="column">
             @if ($paginator->onFirstPage())
-                <div class="ui disabled left floated button" aria-disabled="true">
+                <div class="ui disabled left floated basic button" aria-disabled="true">
                     {!! __('pagination.previous') !!}
                 </div>
             @else
-                <a class="ui left floated button"
+                <a class="ui left floated basic button"
                    href="{{ $paginator->previousPageUrl() }}"
                    rel="prev">
                     {!! __('pagination.previous') !!}
@@ -15,13 +15,13 @@
             @endif
             {{-- Next Page Link --}}
             @if ($paginator->hasMorePages())
-                <a class="ui right floated button"
+                <a class="ui right floated basic button"
                    href="{{ $paginator->nextPageUrl() }}"
                    rel="next">
                     {!! __('pagination.next') !!}
                 </a>
             @else
-                <div class="ui disabled right floated button" aria-disabled="true">
+                <div class="ui disabled right floated basic button" aria-disabled="true">
                     {!! __('pagination.next') !!}
                 </div>
             @endif
