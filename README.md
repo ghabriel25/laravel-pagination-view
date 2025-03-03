@@ -260,7 +260,7 @@ In `welcome.blade.php`
 ## Screenshots
 Here are the screenshot for `paginate()` and `simplePaginate()`
 ### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
-![between pages](https://github.com/user-attachments/assets/bf5bfa9e-2469-4e5d-ab89-217f26cf57cc)
+![between pages](https://github.com/user-attachments/assets/26347f92-8f56-48b9-8f65-4a79c32419c2)
 ![simple between pages](https://github.com/user-attachments/assets/03fb6478-7928-4220-a1d2-b693fcc167d1)
 ### [Bootstrap](https://getbootstrap.com/)
 ![between pages](https://github.com/user-attachments/assets/a1149734-c7a0-44d1-bf54-f0d8be358547)
