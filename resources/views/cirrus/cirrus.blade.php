@@ -1,7 +1,7 @@
 @if ($paginator->hasPages())
     {{-- Previous Page Link --}}
     @if ($paginator->onFirstPage())
-        <button class="btn btn--sm btn--disabled mr-1" aria-disabled="true">
+        <button class="btn--sm btn--disabled mr-1" aria-disabled="true">
             {!! __('pagination.previous') !!}
         </button>
     @else
@@ -14,7 +14,7 @@
     @foreach ($elements as $element)
         {{-- "Three Dots" Separator --}}
         @if (is_string($element))
-            <button class="btn btn--sm btn--disabled mr-1" aria-disabled="true">
+            <button class="btn--sm btn--disabled mr-1" aria-disabled="true">
                 {{ $element }}
             </button>
         @endif
@@ -23,7 +23,7 @@
         @if (is_array($element))
             @foreach ($element as $page => $url)
                 @if ($page == $paginator->currentPage())
-                    <button class="btn btn--sm btn-link mr-1">
+                    <button class="btn--sm btn-link mr-1">
                         {{ $page }}
                     </button>
                 @else
@@ -41,7 +41,7 @@
             {!! __('pagination.next') !!}
         </a>
     @else
-        <button class="btn btn--sm btn--disabled mr-1" aria-disabled="true">
+        <button class="btn--sm btn--disabled mr-1" aria-disabled="true">
             {!! __('pagination.next') !!}
         </button>
     @endif
