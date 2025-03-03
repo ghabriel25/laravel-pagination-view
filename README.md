@@ -269,7 +269,7 @@ Here are the screenshot for `paginate()` and `simplePaginate()`
 ![between pages](https://github.com/user-attachments/assets/3f976cf7-694b-4509-9734-cbeee1f5dce4)
 ![simple between pages](https://github.com/user-attachments/assets/6baa2fb8-4262-4bec-9053-44c946354cc6)
 ### [Cirrus](https://cirrus-ui.com/)
-![between](https://github.com/user-attachments/assets/e1e74add-c615-462a-8a99-529afc695756)
+![between](https://github.com/user-attachments/assets/05a63368-01f5-4495-bfa8-5fb200f0d9e2)
 ![simple](https://github.com/user-attachments/assets/4d2cb0f7-b17b-4d0a-9154-7a8ebc971336)
 ## Contributing
 Feel free to suggest changes, ask for new features or fix bugs yourself. We're sure there are still a lot of improvements that could be made, and we would be very happy to merge useful pull requests. Thanks!
