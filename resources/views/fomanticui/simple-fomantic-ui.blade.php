@@ -1,7 +1,7 @@
 @if ($paginator->hasPages())
     <div class="ui grid">
-        {{-- Previous Page Link --}}
         <div class="column">
+            {{-- Previous Page Link --}}
             @if ($paginator->onFirstPage())
                 <div class="ui disabled left floated basic button" aria-disabled="true">
                     {!! __('pagination.previous') !!}
@@ -13,6 +13,7 @@
                     {!! __('pagination.previous') !!}
                 </a>
             @endif
+
             {{-- Next Page Link --}}
             @if ($paginator->hasMorePages())
                 <a class="ui right floated basic button"
