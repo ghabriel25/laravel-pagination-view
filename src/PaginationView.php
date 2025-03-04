@@ -40,6 +40,8 @@ class PaginationView extends Paginator
     }
 
     /**
+     * Indicates that Cirrus styling should be used for generated links.
+     *
      * @return void
      */
     public static function cirrusView()
