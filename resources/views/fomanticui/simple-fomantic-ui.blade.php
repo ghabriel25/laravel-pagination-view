@@ -1,13 +1,16 @@
 @if ($paginator->hasPages())
+    @props(['dark' => false])
+
     <div class="ui grid">
         <div class="column">
             {{-- Previous Page Link --}}
             @if ($paginator->onFirstPage())
-                <div class="ui disabled left floated basic button" aria-disabled="true">
+                <div class="ui disabled left floated basic @if ($dark) inverted @endif button"
+                     aria-disabled="true">
                     {!! __('pagination.previous') !!}
                 </div>
             @else
-                <a class="ui left floated basic button"
+                <a class="ui left floated basic @if ($dark) inverted @endif button"
                    href="{{ $paginator->previousPageUrl() }}"
                    rel="prev">
                     {!! __('pagination.previous') !!}
@@ -16,13 +19,14 @@
 
             {{-- Next Page Link --}}
             @if ($paginator->hasMorePages())
-                <a class="ui right floated basic button"
+                <a class="ui right floated basic @if ($dark) inverted @endif button"
                    href="{{ $paginator->nextPageUrl() }}"
                    rel="next">
                     {!! __('pagination.next') !!}
                 </a>
             @else
-                <div class="ui disabled right floated basic button" aria-disabled="true">
+                <div class="ui disabled right floated basic @if ($dark) inverted @endif button"
+                     aria-disabled="true">
                     {!! __('pagination.next') !!}
                 </div>
             @endif
