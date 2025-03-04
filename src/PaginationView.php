@@ -14,7 +14,7 @@ class PaginationView extends Paginator
      */
     private static function enableDarkMode(): void
     {
-        View::composer('pagination::*', fn ($view) => $view->with('dark', true));
+        View::composer('pagination::*', fn ($view) => $view->with('darkMode', true));
     }
 
     /**

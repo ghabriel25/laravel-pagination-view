@@ -1,19 +1,19 @@
 @if ($paginator->hasPages())
-    @props(['dark' => false])
+    @props(['darkMode' => false])
 
     <nav aria-label="Pagination">
         <ul class="pagination text-center">
             {{-- Previous Page Link --}}
             @if ($paginator->onFirstPage())
                 <li class="page-item disabled flex-fill" aria-disabled="true">
-                    <span class="page-link text-nowrap @if ($dark) text-bg-dark @endif"
+                    <span class="page-link text-nowrap @if ($darkMode) text-bg-dark @endif"
                           aria-hidden="true">
                         {!! __('pagination.previous') !!}
                     </span>
                 </li>
             @else
                 <li class="page-item flex-fill">
-                    <a class="page-link text-nowrap @if ($dark) text-bg-dark @endif"
+                    <a class="page-link text-nowrap @if ($darkMode) text-bg-dark @endif"
                        href="{{ $paginator->previousPageUrl() }}"
                        rel="prev">
                         {!! __('pagination.previous') !!}
@@ -26,7 +26,7 @@
                 {{-- "Three Dots" Separator --}}
                 @if (is_string($element))
                     <li class="page-item flex-fill disabled" aria-disabled="true">
-                        <span class="page-link @if ($dark) text-bg-dark @endif"
+                        <span class="page-link @if ($darkMode) text-bg-dark @endif"
                               aria-hidden="true">{{ $element }}</span>
                     </li>
                 @endif
@@ -37,13 +37,13 @@
                         @if ($page == $paginator->currentPage())
                             <li class="page-item flex-fill active" aria-current="page">
                                 <span
-                                      class="page-link @if ($dark) text-bg-dark bg-primary @endif">
+                                      class="page-link @if ($darkMode) text-bg-dark bg-primary @endif">
                                     {{ $page }}
                                 </span>
                             </li>
                         @else
                             <li class="page-item flex-fill">
-                                <a class="page-link @if ($dark) text-bg-dark @endif"
+                                <a class="page-link @if ($darkMode) text-bg-dark @endif"
                                    href="{{ $url }}">{{ $page }}</a>
                             </li>
                         @endif
@@ -54,7 +54,7 @@
             {{-- Next Page Link --}}
             @if ($paginator->hasMorePages())
                 <li class="page-item flex-fill">
-                    <a class="page-link text-nowrap @if ($dark) text-bg-dark @endif"
+                    <a class="page-link text-nowrap @if ($darkMode) text-bg-dark @endif"
                        href="{{ $paginator->nextPageUrl() }}"
                        rel="next">
                         {!! __('pagination.next') !!}
@@ -62,7 +62,7 @@
                 </li>
             @else
                 <li class="page-item flex-fill disabled" aria-disabled="true">
-                    <span class="page-link text-nowrap @if ($dark) text-bg-dark @endif"
+                    <span class="page-link text-nowrap @if ($darkMode) text-bg-dark @endif"
                           aria-hidden="true">
                         {!! __('pagination.next') !!}
                     </span>

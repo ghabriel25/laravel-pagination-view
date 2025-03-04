@@ -1,10 +1,10 @@
 @if ($paginator->hasPages())
-    @props(['dark' => false])
+    @props(['darkMode' => false])
 
     <nav class="pagination is-centered"
          role="navigation"
          aria-label="pagination"
-         @if ($dark) data-theme="dark" @endif>
+         @if ($darkMode) data-theme="dark" @endif>
 
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())

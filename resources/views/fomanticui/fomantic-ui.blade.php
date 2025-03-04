@@ -1,7 +1,7 @@
 @if ($paginator->hasPages())
-    @props(['dark' => false])
+    @props(['darkMode' => false])
 
-    <div class="ui @if ($dark) grey inverted @endif pagination menu">
+    <div class="ui @if ($darkMode) grey inverted @endif pagination menu">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
             <div class="disabled item" aria-disabled="true">
@@ -26,7 +26,7 @@
             @if (is_array($element))
                 @foreach ($element as $page => $url)
                     @if ($page == $paginator->currentPage())
-                        <div class="active @if ($dark) blue @endif item" aria-current="page">
+                        <div class="active @if ($darkMode) blue @endif item" aria-current="page">
                             {{ $page }}</div>
                     @else
                         <a class="item" href="{{ $url }}">{{ $page }}</a>
