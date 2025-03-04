@@ -9,10 +9,10 @@ class PaginationViewServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        // Get views path
+        //  Get the directory
         $directory = __DIR__ . '/../resources/views';
 
-        // Get all folders inside views
+        // Get all folders
         $folders = File::directories($directory);
 
         $views = [];
@@ -30,6 +30,7 @@ class PaginationViewServiceProvider extends ServiceProvider
             'pagination'
         );
 
+        // Boot in console
         if ($this->app->runningInConsole()) {
             $this->bootInConsole($views);
         }
@@ -37,7 +38,7 @@ class PaginationViewServiceProvider extends ServiceProvider
 
     protected function bootInConsole($views): void
     {
-        // Set the target path
+        // Get the target path
         $target = $this->app->resourcePath('views/vendor/pagination');
 
         // Create an array where the original view paths are keys and the target path is the value

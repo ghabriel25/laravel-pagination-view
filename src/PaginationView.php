@@ -7,7 +7,7 @@ use Illuminate\Pagination\Paginator;
 class PaginationView extends Paginator
 {
     /**
-     * Indicates that Fomantic UI (Semantic UI) should be used as the default view.
+     * Indicates that Fomantic UI (Semantic UI) styling should be used for generated links.
      *
      * @return void
      */
@@ -18,7 +18,7 @@ class PaginationView extends Paginator
     }
 
     /**
-     * Indicates that Bootstrap should be used as the default view.
+     * Indicates that Bootstrap styling should be used for generated links.
      *
      * @return void
      */
@@ -29,7 +29,7 @@ class PaginationView extends Paginator
     }
 
     /**
-     * Indicates that Bulma should be used as the default view.
+     * Indicates that Bulma styling should be used for generated links.
      *
      * @return void
      */
@@ -40,8 +40,6 @@ class PaginationView extends Paginator
     }
 
     /**
-     * Indicates that Cirrus should be used as the default view.
-     *
      * @return void
      */
     public static function cirrusView()
