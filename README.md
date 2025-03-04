@@ -19,6 +19,7 @@ Pagination view template using:
 2. [Bootstrap](https://getbootstrap.com/)
 3. [Bulma](https://bulma.io/)
 4. [Cirrus](https://cirrus-ui.com/)
+5. [Dark Mode](#dark-mode) (New!) 🚀
 ## Table of contents
 1. [Requirement](#requirement)
 2. [Installation](#installation)
@@ -256,6 +257,27 @@ In `welcome.blade.php`
 </ul>
 {{ $users->links() }}
 {{-- or {{ $users->onEachSide(1)->links() }} --}}
+```
+## Dark Mode
+To enable dark mode, simply pass `true` as parameter
+```php
+<?php
+
+namespace App\Providers;
+
+use Ghabriel\PaginationView\PaginationView;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        PaginationView::fomanticuiView(true);
+        // PaginationView::bootstrapView(true);
+        // PaginationView::bulmaView(true);
+        // PaginationView::cirrusView(true);
+    }
+}
 ```
 ## Screenshots
 Here are the screenshot for `paginate()` and `simplePaginate()`
