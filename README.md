@@ -20,7 +20,7 @@ https://packagist.org/packages/ghabriel25/laravel-pagination-view
 3. **Bulma CSS** https://bulma.io/
 4. **Cirrus UI** https://cirrus-ui.com/
 
-- [Dark Mode](#dark-mode) (New!) 🚀 feature
+- [Dark Mode](#dark-mode) (New feature!) 🚀
 ## Table of contents
 1. [Requirement](#requirement)
 2. [Installation](#installation)
