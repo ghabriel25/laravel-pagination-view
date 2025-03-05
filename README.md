@@ -14,12 +14,13 @@ This package enhances Laravel's default pagination by providing additional featu
 https://packagist.org/packages/ghabriel25/laravel-pagination-view
 
 ## Features
-Pagination view template using:
-1. [Fomantic UI](https://fomantic-ui.com/) (Semantic UI)
-2. [Bootstrap](https://getbootstrap.com/)
-3. [Bulma](https://bulma.io/)
-4. [Cirrus](https://cirrus-ui.com/)
-5. [Dark Mode](#dark-mode) (New!) 🚀
+- Pagination view template using:
+1. **Fomantic UI (Semantic UI)** https://fomantic-ui.com/
+2. **Bootstrap** https://getbootstrap.com/
+3. **Bulma CSS** https://bulma.io/
+4. **Cirrus UI** https://cirrus-ui.com/
+
+- [Dark Mode](#dark-mode) (New!) 🚀 feature
 ## Table of contents
 1. [Requirement](#requirement)
 2. [Installation](#installation)
