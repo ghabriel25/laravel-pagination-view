@@ -23,7 +23,7 @@ final class PaginationView
      * @param  bool  $darkMode  Whether to enable dark mode
      * @return void
      */
-    public static function fomanticuiView($darkMode = false): void
+    public static function fomanticuiView(bool $darkMode = false): void
     {
         if ($darkMode) {
             self::enableDarkMode();
@@ -39,7 +39,7 @@ final class PaginationView
      * @param  bool  $darkMode  Whether to enable dark mode
      * @return void
      */
-    public static function bootstrapView($darkMode = false): void
+    public static function bootstrapView(bool $darkMode = false): void
     {
         if ($darkMode) {
             self::enableDarkMode();
@@ -55,7 +55,7 @@ final class PaginationView
      * @param  bool  $darkMode  Whether to enable dark mode
      * @return void
      */
-    public static function bulmaView($darkMode = false): void
+    public static function bulmaView(bool $darkMode = false): void
     {
         if ($darkMode) {
             self::enableDarkMode();
@@ -71,7 +71,7 @@ final class PaginationView
      * @param  bool  $darkMode  Whether to enable dark mode
      * @return void
      */
-    public static function cirrusView($darkMode = false): void
+    public static function cirrusView(bool $darkMode = false): void
     {
         if ($darkMode) {
             self::enableDarkMode();
