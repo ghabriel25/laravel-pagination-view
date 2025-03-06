@@ -9,7 +9,7 @@
 >
 > By default, the views rendered to display the pagination links are compatible with the Tailwind CSS framework.
 
-This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com/), [Bootstrap](https://getbootstrap.com/), [Bulma](https://bulma.io/) and [Cirrus](https://cirrus-ui.com/). Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
+This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com/), [Bootstrap](https://getbootstrap.com/), [Bulma CSS](https://bulma.io/) and [Cirrus UI](https://cirrus-ui.com/). Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
 
 https://packagist.org/packages/ghabriel25/laravel-pagination-view
 
