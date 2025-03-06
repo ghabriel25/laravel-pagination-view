@@ -26,14 +26,14 @@ https://packagist.org/packages/ghabriel25/laravel-pagination-view
 3. [Usage](#usage)
    - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui)
    - [Bootstrap](#bootstrap)
-   - [Bulma CSS](#bulma)
-   - [Cirrus UI](#cirrus)
+   - [Bulma CSS](#bulma-css)
+   - [Cirrus UI](#cirrus-ui)
 5. [Initialization](#initialization)
 6. [Screenshots](#screenshots)
    - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui-1)
    - [Bootstrap](#bootstrap-1)
-   - [Bulma CSS](#bulma-1)
-   - [Cirrus UI](#cirrus-1)
+   - [Bulma CSS](#bulma-css-1)
+   - [Cirrus UI](#cirrus-ui-1)
 ## Requirement
 Laravel version 10+
 ## Installation
