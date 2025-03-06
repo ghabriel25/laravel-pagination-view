@@ -18,66 +18,63 @@ final class PaginationView
     }
 
     /**
-     * Indicates that Fomantic UI (Semantic UI) styling should be used for generated links.
+     * Configure the pagination view.
      *
-     * @param  bool  $darkMode  Whether to enable dark mode
+     * @param string $viewName The name of the view to use for pagination
+     * @param bool $darkMode Whether to enable dark mode
      * @return void
      */
-    public static function fomanticuiView(bool $darkMode = false): void
+    private static function configureView(string $viewName, bool $darkMode = false): void
     {
         if ($darkMode) {
             self::enableDarkMode();
         }
 
-        Paginator::defaultView('pagination::fomantic-ui');
-        Paginator::defaultSimpleView('pagination::simple-fomantic-ui');
+        Paginator::defaultView("pagination::$viewName");
+        Paginator::defaultSimpleView("pagination::simple-$viewName");
+    }
+
+    /**
+     * Indicates that Fomantic UI (Semantic UI) styling should be used for generated links.
+     *
+     * @param bool $darkMode Whether to enable dark mode
+     * @return void
+     */
+    public static function fomanticuiView(bool $darkMode = false): void
+    {
+        self::configureView('fomantic-ui', $darkMode);
     }
 
     /**
      * Indicates that Bootstrap styling should be used for generated links.
      *
-     * @param  bool  $darkMode  Whether to enable dark mode
+     * @param bool $darkMode Whether to enable dark mode
      * @return void
      */
     public static function bootstrapView(bool $darkMode = false): void
     {
-        if ($darkMode) {
-            self::enableDarkMode();
-        }
-
-        Paginator::defaultView('pagination::bootstrap');
-        Paginator::defaultSimpleView('pagination::simple-bootstrap');
+        self::configureView('bootstrap', $darkMode);
     }
 
     /**
      * Indicates that Bulma styling should be used for generated links.
      *
-     * @param  bool  $darkMode  Whether to enable dark mode
+     * @param bool $darkMode Whether to enable dark mode
      * @return void
      */
     public static function bulmaView(bool $darkMode = false): void
     {
-        if ($darkMode) {
-            self::enableDarkMode();
-        }
-
-        Paginator::defaultView('pagination::bulma');
-        Paginator::defaultSimpleView('pagination::simple-bulma');
+        self::configureView('bulma', $darkMode);
     }
 
     /**
      * Indicates that Cirrus styling should be used for generated links.
      *
-     * @param  bool  $darkMode  Whether to enable dark mode
+     * @param bool $darkMode Whether to enable dark mode
      * @return void
      */
     public static function cirrusView(bool $darkMode = false): void
     {
-        if ($darkMode) {
-            self::enableDarkMode();
-        }
-
-        Paginator::defaultView('pagination::cirrus');
-        Paginator::defaultSimpleView('pagination::simple-cirrus');
+        self::configureView('cirrus', $darkMode);
     }
 }
