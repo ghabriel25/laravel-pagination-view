@@ -26,14 +26,14 @@ https://packagist.org/packages/ghabriel25/laravel-pagination-view
 3. [Usage](#usage)
    - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui)
    - [Bootstrap](#bootstrap)
-   - [Bulma](#bulma)
-   - [Cirrus](#cirrus)
+   - [Bulma CSS](#bulma)
+   - [Cirrus UI](#cirrus)
 5. [Initialization](#initialization)
 6. [Screenshots](#screenshots)
    - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui-1)
    - [Bootstrap](#bootstrap-1)
-   - [Bulma](#bulma-1)
-   - [Cirrus](#cirrus-1)
+   - [Bulma CSS](#bulma-1)
+   - [Cirrus UI](#cirrus-1)
 ## Requirement
 Laravel version 10+
 ## Installation
@@ -98,7 +98,7 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bootstrap
 ```
-### [Bulma](https://bulma.io/)
+### [Bulma CSS](https://bulma.io/)
 Edit your `App\Providers\AppServiceProvider`
 ```php
 <?php
@@ -124,7 +124,7 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bulma
 ```
-### [Cirrus](https://fomantic-ui.com](https://cirrus-ui.com/))
+### [Cirrus UI](https://fomantic-ui.com](https://cirrus-ui.com/))
 Edit your `App\Providers\AppServiceProvider`
 ```php
 <?php
@@ -217,11 +217,11 @@ Here are the screenshot for `paginate()` and `simplePaginate()`
 ![between pages](https://github.com/user-attachments/assets/a1149734-c7a0-44d1-bf54-f0d8be358547)
 ![simple](https://github.com/user-attachments/assets/d4499349-c698-4a29-9e3a-df7edbe77fe1)
 ![bootstrap](https://github.com/user-attachments/assets/59c8f0e3-cb6f-450f-ab50-3814a06941d5)
-### [Bulma](https://bulma.io/)
+### [Bulma CSS](https://bulma.io/)
 ![between pages](https://github.com/user-attachments/assets/3f976cf7-694b-4509-9734-cbeee1f5dce4)
 ![simple between pages](https://github.com/user-attachments/assets/6baa2fb8-4262-4bec-9053-44c946354cc6)
 ![bulma](https://github.com/user-attachments/assets/3362db5f-466b-4e52-aa3e-5f9c19aa2f77)
-### [Cirrus](https://cirrus-ui.com/)
+### [Cirrus UI](https://cirrus-ui.com/)
 ![between](https://github.com/user-attachments/assets/05a63368-01f5-4495-bfa8-5fb200f0d9e2)
 ![simple](https://github.com/user-attachments/assets/ed9b5870-49cb-46d8-b229-c949a0f6538a)
 ![cirrus](https://github.com/user-attachments/assets/855fbdbb-2421-4559-9cd2-2986b62576b5)
