@@ -53,24 +53,6 @@ Edit your `App\Providers\AppServiceProvider`
 
 namespace App\Providers;
 
-use Illuminate\Pagination\Paginator;
-use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-  public function boot(): void
-  {
-    Paginator::defaultView('pagination::fomantic-ui');
-    Paginator::defaultSimpleView('pagination::simple-fomantic-ui');
-  }
-}
-```
-You could also directly use `Ghabriel\PaginationView\PaginationView` class
-```php
-<?php
-
-namespace App\Providers;
-
 use Ghabriel\PaginationView\PaginationView;
 use Illuminate\Support\ServiceProvider;
 
@@ -92,24 +74,6 @@ php artisan vendor:publish --tag=pagination-view-fomanticui
 ```
 ### [Bootstrap](https://getbootstrap.com/)
 Edit your `App\Providers\AppServiceProvider`
-```php
-<?php
-
-namespace App\Providers;
-
-use Illuminate\Pagination\Paginator;
-use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-  public function boot(): void
-  {
-    Paginator::defaultView('pagination::bootstrap');
-    Paginator::defaultSimpleView('pagination::simple-bootstrap');
-  }
-}
-```
-You could also directly use `Ghabriel\PaginationView\PaginationView` class
 ```php
 <?php
 
@@ -141,24 +105,6 @@ Edit your `App\Providers\AppServiceProvider`
 
 namespace App\Providers;
 
-use Illuminate\Pagination\Paginator;
-use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-  public function boot(): void
-  {
-    Paginator::defaultView('pagination::bulma');
-    Paginator::defaultSimpleView('pagination::simple-bulma');
-  }
-}
-```
-You could also directly use `Ghabriel\PaginationView\PaginationView` class
-```php
-<?php
-
-namespace App\Providers;
-
 use Ghabriel\PaginationView\PaginationView;
 use Illuminate\Support\ServiceProvider;
 
@@ -180,24 +126,6 @@ php artisan vendor:publish --tag=pagination-view-bulma
 ```
 ### [Cirrus](https://fomantic-ui.com](https://cirrus-ui.com/))
 Edit your `App\Providers\AppServiceProvider`
-```php
-<?php
-
-namespace App\Providers;
-
-use Illuminate\Pagination\Paginator;
-use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-  public function boot(): void
-  {
-    Paginator::defaultView('pagination::cirrus');
-    Paginator::defaultSimpleView('pagination::simple-cirrus');
-  }
-}
-```
-You could also directly use `Ghabriel\PaginationView\PaginationView` class
 ```php
 <?php
 
