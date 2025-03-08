@@ -240,9 +240,9 @@ class AppServiceProvider extends ServiceProvider
 ## Screenshots
 Here are the screenshot for `paginate()` and `simplePaginate()`
 ### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
-![between pages](https://github.com/user-attachments/assets/26347f92-8f56-48b9-8f65-4a79c32419c2)
-![simple between pages](https://github.com/user-attachments/assets/03fb6478-7928-4220-a1d2-b693fcc167d1)
-![fomanticui](https://github.com/user-attachments/assets/c316cf94-0e34-43ef-b774-1d061bf84d2f)
+![between pages](https://github.com/user-attachments/assets/77fcef62-f529-40b4-83cf-e1ec17f4ad24)
+![simple between pages](https://github.com/user-attachments/assets/90f57286-0ffe-4d91-a0c7-48ee4ec5c955)
+![fomanticui](https://github.com/user-attachments/assets/1fabac5d-a8cc-4268-a533-ea1f65a04f88)
 ### [Bootstrap](https://getbootstrap.com/)
 ![between pages](https://github.com/user-attachments/assets/a1149734-c7a0-44d1-bf54-f0d8be358547)
 ![simple](https://github.com/user-attachments/assets/d4499349-c698-4a29-9e3a-df7edbe77fe1)
