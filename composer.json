@@ -10,7 +10,8 @@
         "fomantic-ui",
         "bootstrap",
         "bulma",
-        "cirrus-ui"
+        "cirrus-ui",
+        "uikit"
     ],
     "license": "MIT",
     "authors": [
