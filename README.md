@@ -233,6 +233,7 @@ class AppServiceProvider extends ServiceProvider
         // PaginationView::bootstrapView(true);
         // PaginationView::bulmaView(true);
         // PaginationView::cirrusView(true);
+        // PaginationView::uikitView(true);
     }
 }
 ```
