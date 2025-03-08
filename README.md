@@ -9,7 +9,7 @@
 >
 > By default, the views rendered to display the pagination links are compatible with the Tailwind CSS framework.
 
-This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com/), [Bootstrap](https://getbootstrap.com/), [Bulma CSS](https://bulma.io/) and [Cirrus UI](https://cirrus-ui.com/). Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
+This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com/), [Bootstrap](https://getbootstrap.com/), [Bulma CSS](https://bulma.io/), [Cirrus UI](https://cirrus-ui.com/) and [UIKIT](https://getuikit.com/). Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
 
 https://packagist.org/packages/ghabriel25/laravel-pagination-view
 
@@ -19,6 +19,7 @@ https://packagist.org/packages/ghabriel25/laravel-pagination-view
    - **Bootstrap** https://getbootstrap.com/
    - **Bulma CSS** https://bulma.io/
    - **Cirrus UI** https://cirrus-ui.com/
+   - **UIkit** https://getuikit.com/
 2. [Dark Mode](#dark-mode) (New feature!) 🚀
 ## Table of contents
 1. [Requirement](#requirement)
@@ -28,12 +29,14 @@ https://packagist.org/packages/ghabriel25/laravel-pagination-view
    - [Bootstrap](#bootstrap)
    - [Bulma CSS](#bulma-css)
    - [Cirrus UI](#cirrus-ui)
+   - [UIkit](#uikit)
 5. [Initialization](#initialization)
 6. [Screenshots](#screenshots)
    - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui-1)
    - [Bootstrap](#bootstrap-1)
    - [Bulma CSS](#bulma-css-1)
    - [Cirrus UI](#cirrus-ui-1)
+   - [UIkit](#uikit-1)
 ## Requirement
 Laravel version 10+
 ## Installation
@@ -124,7 +127,7 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bulma
 ```
-### [Cirrus UI](https://fomantic-ui.com](https://cirrus-ui.com/))
+### [Cirrus UI](https://cirrus-ui.com/)
 Edit your `App\Providers\AppServiceProvider`
 ```php
 <?php
@@ -149,6 +152,32 @@ php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServ
 or
 ```
 php artisan vendor:publish --tag=pagination-view-cirrus
+```
+### [UIkit](https://getuikit.com/)
+Edit your `App\Providers\AppServiceProvider`
+```php
+<?php
+
+namespace App\Providers;
+
+use Ghabriel\PaginationView\PaginationView;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        PaginationView::uikitView();
+    }
+}
+```
+If you want to customize the view,
+```
+php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-uikit
+```
+or
+```
+php artisan vendor:publish --tag=pagination-view-uikit
 ```
 
 ---
@@ -225,5 +254,9 @@ Here are the screenshot for `paginate()` and `simplePaginate()`
 ![between](https://github.com/user-attachments/assets/05a63368-01f5-4495-bfa8-5fb200f0d9e2)
 ![simple](https://github.com/user-attachments/assets/ed9b5870-49cb-46d8-b229-c949a0f6538a)
 ![cirrus](https://github.com/user-attachments/assets/855fbdbb-2421-4559-9cd2-2986b62576b5)
+### [UIkit](https://getuikit.com/)
+![between](https://github.com/user-attachments/assets/e99e543e-d240-48b9-babf-131dd899bd0b)
+![simple](https://github.com/user-attachments/assets/dee6cbb5-87e5-4ad6-a6a1-0d0481ac85f3)
+![uikit](https://github.com/user-attachments/assets/88af0738-416f-4a8d-b6a0-acf1b12c370f)
 ## Contributing
 Feel free to suggest changes, ask for new features or fix bugs yourself. We're sure there are still a lot of improvements that could be made, and we would be very happy to merge useful pull requests. Thanks!
