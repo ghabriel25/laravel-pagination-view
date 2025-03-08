@@ -81,4 +81,15 @@ final class PaginationView
     {
         self::configureView('cirrus', $darkMode);
     }
+
+    /**
+     * Indicates that UIKit styling should be used for generated links.
+     *
+     * @param  bool  $darkMode  Whether to enable dark mode
+     * @return void
+     */
+    public static function uikitView(bool $darkMode = false): void
+    {
+        self::configureView('uikit', $darkMode);
+    }
 }
