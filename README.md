@@ -5,9 +5,10 @@
 ![Github last commit](https://img.shields.io/github/last-commit/ghabriel25/laravel-pagination-view)
 [![Packagist downloads](https://img.shields.io/packagist/dt/ghabriel25/laravel-pagination-view?color=66ff00)](https://packagist.org/packages/ghabriel25/laravel-pagination-view/stats)
 
-> **Laravel**
->
+> [!NOTE]
 > By default, the views rendered to display the pagination links are compatible with the Tailwind CSS framework.
+> 
+> reference: https://laravel.com/docs/12.x/pagination#customizing-the-pagination-view
 
 This package enhances Laravel's default pagination by providing additional features and customizable views. Designed to be lightweight and SEO-friendly, it integrates seamlessly with [Fomantic UI](https://fomantic-ui.com/), [Bootstrap](https://getbootstrap.com/), [Bulma CSS](https://bulma.io/), [Cirrus UI](https://cirrus-ui.com/) and [UIkit](https://getuikit.com/). Perfect for developers looking to improve their Laravel application's pagination experience with minimal effort.
 
@@ -44,10 +45,11 @@ Laravel version 10+
 composer require ghabriel25/laravel-pagination-view
 ```
 ## Usage
-> **Note:** Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling!
-> 
+> [!IMPORTANT]
+> Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling!
 
-> **Info:** All published views are located in `resources/views/vendor/pagination`
+> [!TIP]
+> All published views are located in `resources/views/vendor/pagination`
 
 ### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
 Edit your `App\Providers\AppServiceProvider`
