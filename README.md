@@ -256,8 +256,8 @@ Here are the screenshot for `paginate()` and `simplePaginate()`
 ![simple](https://github.com/user-attachments/assets/ed9b5870-49cb-46d8-b229-c949a0f6538a)
 ![cirrus](https://github.com/user-attachments/assets/855fbdbb-2421-4559-9cd2-2986b62576b5)
 ### [UIkit](https://getuikit.com/)
-![between](https://github.com/user-attachments/assets/e99e543e-d240-48b9-babf-131dd899bd0b)
+![between](https://github.com/user-attachments/assets/1a972c2e-41f3-4913-8c21-2951d95b879f)
 ![simple](https://github.com/user-attachments/assets/dee6cbb5-87e5-4ad6-a6a1-0d0481ac85f3)
-![uikit](https://github.com/user-attachments/assets/88af0738-416f-4a8d-b6a0-acf1b12c370f)
+![uikit](https://github.com/user-attachments/assets/9d7e1f47-c331-4950-8553-bf4f14327e4c)
 ## Contributing
 Feel free to suggest changes, ask for new features or fix bugs yourself. We're sure there are still a lot of improvements that could be made, and we would be very happy to merge useful pull requests. Thanks!
