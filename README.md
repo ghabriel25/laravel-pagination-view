@@ -44,7 +44,8 @@ composer require ghabriel25/laravel-pagination-view
 ```
 ## Usage
 > [!IMPORTANT]
-> Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling!
+> - Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling!
+> - Please ensure you are using the **latest or a compatible version** of the CSS framework in your project.
 
 > [!TIP]
 > All published views are located in `resources/views/vendor/pagination`
