@@ -1,7 +1,7 @@
 @if ($paginator->hasPages())
     @props(['darkMode' => false])
 
-    <div class="uk-flex uk-flex-between@m uk-flex-left uk-flex-wrap @if ($darkMode) uk-light @endif">
+    <div class="uk-flex uk-flex-between uk-flex-wrap @if ($darkMode) uk-light @endif">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
             <button class="uk-button uk-button-small uk-button-default uk-width-auto@m uk-width-1-2 uk-margin-small-top"
@@ -29,29 +29,31 @@
         @endif
 
         {{-- Pagination Elements --}}
-        @foreach ($elements as $element)
-            {{-- "Three Dots" Separator --}}
-            @if (is_string($element))
-                <button class="uk-button uk-button-small uk-button-default uk-margin-small-top" disabled>
-                    {{ $element }}
-                </button>
-            @endif
+        <div>
+            @foreach ($elements as $element)
+                {{-- "Three Dots" Separator --}}
+                @if (is_string($element))
+                    <button class="uk-button uk-button-small uk-button-default uk-margin-small-top" disabled>
+                        {{ $element }}
+                    </button>
+                @endif
 
-            {{-- Array Of Links --}}
-            @if (is_array($element))
-                @foreach ($element as $page => $url)
-                    @if ($page == $paginator->currentPage())
-                        <button class="uk-button uk-button-small uk-button-primary uk-margin-small-top">
-                            {{ $page }}
-                        </button>
-                    @else
-                        <a class="uk-button uk-button-small uk-button-default uk-margin-small-top"
-                           href="{{ $url }}">
-                            {{ $page }}
-                        </a>
-                    @endif
-                @endforeach
-            @endif
-        @endforeach
+                {{-- Array Of Links --}}
+                @if (is_array($element))
+                    @foreach ($element as $page => $url)
+                        @if ($page == $paginator->currentPage())
+                            <button class="uk-button uk-button-small uk-button-primary uk-margin-small-top">
+                                {{ $page }}
+                            </button>
+                        @else
+                            <a class="uk-button uk-button-small uk-button-default uk-margin-small-top"
+                               href="{{ $url }}">
+                                {{ $page }}
+                            </a>
+                        @endif
+                    @endforeach
+                @endif
+            @endforeach
+        </div>
     </div>
 @endif
