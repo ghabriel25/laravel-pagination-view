@@ -207,12 +207,12 @@ Here are the screenshot for `paginate()` and `simplePaginate()`
 ![simple between pages](https://github.com/user-attachments/assets/6baa2fb8-4262-4bec-9053-44c946354cc6)
 ![bulma](https://github.com/user-attachments/assets/3362db5f-466b-4e52-aa3e-5f9c19aa2f77)
 ### [Cirrus UI](https://cirrus-ui.com/)
-![between](https://github.com/user-attachments/assets/05a63368-01f5-4495-bfa8-5fb200f0d9e2)
-![simple](https://github.com/user-attachments/assets/ed9b5870-49cb-46d8-b229-c949a0f6538a)
-![cirrus](https://github.com/user-attachments/assets/855fbdbb-2421-4559-9cd2-2986b62576b5)
+![between](https://github.com/user-attachments/assets/d2b69aeb-6d06-40d9-bd5d-0bc99beafc3b)
+![simple](https://github.com/user-attachments/assets/a74e2f0b-2f0c-4b35-9beb-e94e28d5b0b7)
+![cirrus](https://github.com/user-attachments/assets/f87801ab-1d70-4d21-a2c6-530e557efeaa)
 ### [UIkit](https://getuikit.com/)
-![between](https://github.com/user-attachments/assets/3c69fcd9-a8d7-4bed-9273-b0559aa0699a)
-![simple](https://github.com/user-attachments/assets/8a83b29f-e795-4563-8107-17ad153c9013)
+![between](https://github.com/user-attachments/assets/e84909f7-e195-4109-912e-c5ce56113c88)
+![simple](https://github.com/user-attachments/assets/05ff76ef-e1c9-42eb-839c-dcb955866be3)
 ![uikit](https://github.com/user-attachments/assets/dc194bff-4a0d-4e92-aa53-3e14cb9d8caf)
 ## Contributing
 Feel free to suggest changes, ask for new features or fix bugs yourself. We're sure there are still a lot of improvements that could be made, and we would be very happy to merge useful pull requests. Thanks!
