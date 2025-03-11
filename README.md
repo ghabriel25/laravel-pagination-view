@@ -84,7 +84,7 @@ class AppServiceProvider extends ServiceProvider
 > [!TIP]
 > All published views are located in `resources/views/vendor/pagination`
 
-This step only if you want to customize the view.
+Follow this step only if you want to customize the view.
 #### [Fomantic UI](https://fomantic-ui.com/) (Semantic UI)
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-fomanticui
