@@ -4,12 +4,12 @@
     <div class="uk-flex uk-flex-between uk-flex-wrap @if ($darkMode) uk-light @endif">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
-            <button class="uk-button uk-button-small uk-button-default uk-width-auto@m uk-width-1-2 uk-margin-small-top"
+            <button class="uk-button uk-button-small uk-button-default uk-width-1-2 uk-width-1-3@s uk-width-auto@m uk-margin-small-top"
                     disabled>
                 {!! __('pagination.previous') !!}
             </button>
         @else
-            <a class="uk-button uk-button-small uk-button-default uk-width-auto@m uk-width-1-2 uk-margin-small-top"
+            <a class="uk-button uk-button-small uk-button-default uk-width-1-2 uk-width-1-3@s uk-width-auto@m uk-margin-small-top"
                href="{{ $paginator->previousPageUrl() }}">
                 {!! __('pagination.previous') !!}
             </a>
@@ -17,7 +17,7 @@
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
-            <a class="uk-button uk-button-small uk-button-default uk-width-auto@m uk-width-1-2 uk-flex-last@m uk-margin-small-top"
+            <a class="uk-button uk-button-small uk-button-default uk-width-1-2 uk-width-1-3@s uk-width-auto@m uk-flex-last@m uk-margin-small-top"
                href="{{ $paginator->nextPageUrl() }}">
                 {!! __('pagination.next') !!}
             </a>
