@@ -24,6 +24,7 @@ This package enhances Laravel's default pagination by providing additional featu
 1. [Requirement](#requirement)
 2. [Installation](#installation)
 3. [Usage](#usage)
+4. [Publishing Views](#publishing-views-optional)
    - [Fomantic UI (Semantic UI)](#fomantic-ui-semantic-ui)
    - [Bootstrap](#bootstrap)
    - [Bulma CSS](#bulma-css)
@@ -50,8 +51,7 @@ composer require ghabriel25/laravel-pagination-view
 > [!TIP]
 > All published views are located in `resources/views/vendor/pagination`
 
-### [Fomantic UI](https://fomantic-ui.com) (Semantic UI)
-Edit your `App\Providers\AppServiceProvider`
+Edit your **`App\Providers\AppServiceProvider.php`**
 ```php
 <?php
 
@@ -64,11 +64,28 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
+        // USE ONLY ONE OF THESE BASED ON YOUR CSS FRAMEWORK
+
+        // Fomantic UI (Semantic UI)
         PaginationView::fomanticuiView();
+
+        // Bootstrap
+        PaginationView::bootstrapView();
+
+        // Bulma CSS
+        PaginationView::bulmaView();
+
+        // Cirrus UI
+        PaginationView::cirrusView();
+
+        // UIkit
+        PaginationView::uikitView();
     }
 }
 ```
+## Publishing Views (Optional)
 If you want to customize the view,
+#### [Fomantic UI](https://fomantic-ui.com/) (Semantic UI)
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-fomanticui
 ```
@@ -76,25 +93,7 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-fomanticui
 ```
-### [Bootstrap](https://getbootstrap.com/)
-Edit your `App\Providers\AppServiceProvider`
-```php
-<?php
-
-namespace App\Providers;
-
-use Ghabriel\PaginationView\PaginationView;
-use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-    public function boot(): void
-    {
-        PaginationView::bootstrapView();
-    }
-}
-```
-If you want to customize the view,
+#### [Bootstrap](https://getbootstrap.com/)
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-bootstrap
 ```
@@ -102,25 +101,7 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bootstrap
 ```
-### [Bulma CSS](https://bulma.io/)
-Edit your `App\Providers\AppServiceProvider`
-```php
-<?php
-
-namespace App\Providers;
-
-use Ghabriel\PaginationView\PaginationView;
-use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-    public function boot(): void
-    {
-        PaginationView::bulmaView();
-    }
-}
-```
-If you want to customize the view,
+#### [Bulma CSS](https://bulma.io/)
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-bulma
 ```
@@ -128,25 +109,7 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-bulma
 ```
-### [Cirrus UI](https://cirrus-ui.com/)
-Edit your `App\Providers\AppServiceProvider`
-```php
-<?php
-
-namespace App\Providers;
-
-use Ghabriel\PaginationView\PaginationView;
-use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-    public function boot(): void
-    {
-        PaginationView::cirrusView();
-    }
-}
-```
-If you want to customize the view,
+#### [Cirrus UI](https://cirrus-ui.com/)
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-cirrus
 ```
@@ -154,25 +117,7 @@ or
 ```
 php artisan vendor:publish --tag=pagination-view-cirrus
 ```
-### [UIkit](https://getuikit.com/)
-Edit your `App\Providers\AppServiceProvider`
-```php
-<?php
-
-namespace App\Providers;
-
-use Ghabriel\PaginationView\PaginationView;
-use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-    public function boot(): void
-    {
-        PaginationView::uikitView();
-    }
-}
-```
-If you want to customize the view,
+#### [UIkit](https://getuikit.com/)
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-uikit
 ```
@@ -230,11 +175,20 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
+        // Fomantic UI (Semantic UI)
         PaginationView::fomanticuiView(true);
-        // PaginationView::bootstrapView(true);
-        // PaginationView::bulmaView(true);
-        // PaginationView::cirrusView(true);
-        // PaginationView::uikitView(true);
+
+        // Bootstrap
+        PaginationView::bootstrapView(true);
+
+        // Bulma CSS
+        PaginationView::bulmaView(true);
+
+        // Cirrus UI
+        PaginationView::cirrusView(true);
+
+        // UIkit
+        PaginationView::uikitView(true);
     }
 }
 ```
