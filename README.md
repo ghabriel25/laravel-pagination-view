@@ -48,9 +48,6 @@ composer require ghabriel25/laravel-pagination-view
 > - Don't forget to include the necessary CSS files or link to the relevant CDN in your project to ensure proper styling!
 > - Please ensure you are using the **latest or a compatible version** of the CSS framework in your project.
 
-> [!TIP]
-> All published views are located in `resources/views/vendor/pagination`
-
 Edit your **`App\Providers\AppServiceProvider.php`**
 ```php
 <?php
@@ -84,7 +81,10 @@ class AppServiceProvider extends ServiceProvider
 }
 ```
 ## Publishing Views (Optional)
-If you want to customize the view,
+> [!TIP]
+> All published views are located in `resources/views/vendor/pagination`
+
+This step only if you want to customize the view.
 #### [Fomantic UI](https://fomantic-ui.com/) (Semantic UI)
 ```
 php artisan vendor:publish --provider=Ghabriel\PaginationView\PaginationViewServiceProvider --tag=pagination-view-fomanticui
