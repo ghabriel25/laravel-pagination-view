@@ -162,7 +162,7 @@ In `welcome.blade.php`
 {{-- or {{ $users->onEachSide(1)->links() }} --}}
 ```
 ## Dark Mode
-To enable dark mode, simply pass boolean `true` as parameter
+To enable dark mode, simply pass boolean **`true`** as parameter
 ```php
 <?php
 
