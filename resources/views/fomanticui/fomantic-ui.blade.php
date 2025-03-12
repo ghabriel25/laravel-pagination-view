@@ -1,28 +1,26 @@
 @if ($paginator->hasPages())
     @props(['darkMode' => false])
 
-    <div class="ui three column grid">
+    <div class="ui grid">
         <div class="row">
             {{-- Previous Page Link --}}
-            <div class="two wide computer four wide tablet eight wide mobile left floated column">
-                <div class="ui compact fluid buttons">
-                    @if ($paginator->onFirstPage())
-                        <div class="ui disabled @if ($darkMode) inverted basic @endif button"
-                             aria-disabled="true">
-                            {!! __('pagination.previous') !!}
-                        </div>
-                    @else
-                        <a class="ui @if ($darkMode) inverted @else basic @endif button"
-                           href="{{ $paginator->previousPageUrl() }}"
-                           rel="prev">
-                            {!! __('pagination.previous') !!}
-                        </a>
-                    @endif
-                </div>
+            <div class="three wide computer three wide tablet eight wide mobile left floated column">
+                @if ($paginator->onFirstPage())
+                    <div class="fluid ui disabled @if ($darkMode) inverted basic @endif compact button"
+                         aria-disabled="true">
+                        {!! __('pagination.previous') !!}
+                    </div>
+                @else
+                    <a class="fluid ui @if ($darkMode) inverted @else basic @endif compact button"
+                       href="{{ $paginator->previousPageUrl() }}"
+                       rel="prev">
+                        {!! __('pagination.previous') !!}
+                    </a>
+                @endif
             </div>
 
             {{-- Pagination Elements --}}
-            <div class="twelve wide computer only column center aligned">
+            <div class="ten wide tablet computer only column">
                 <div class="ui compact wrapping spaced buttons">
                     @foreach ($elements as $element)
                         {{-- "Three Dots" Separator --}}
@@ -53,26 +51,24 @@
             </div>
 
             {{-- Next Page Link --}}
-            <div class="two wide computer four wide tablet eight wide mobile right floated column">
-                <div class="ui compact fluid buttons">
-                    @if ($paginator->hasMorePages())
-                        <a class="ui @if ($darkMode) inverted @else basic @endif button"
-                           href="{{ $paginator->nextPageUrl() }}"
-                           rel="next">
-                            {!! __('pagination.next') !!}
-                        </a>
-                    @else
-                        <div class="ui disabled @if ($darkMode) inverted basic @endif button"
-                             aria-disabled="true">
-                            {!! __('pagination.next') !!}
-                        </div>
-                    @endif
-                </div>
+            <div class="three wide computer three wide tablet eight wide mobile right floated column">
+                @if ($paginator->hasMorePages())
+                    <a class="fluid ui @if ($darkMode) inverted @else basic @endif compact button"
+                       href="{{ $paginator->nextPageUrl() }}"
+                       rel="next">
+                        {!! __('pagination.next') !!}
+                    </a>
+                @else
+                    <div class="fluid ui disabled @if ($darkMode) inverted basic @endif compact button"
+                         aria-disabled="true">
+                        {!! __('pagination.next') !!}
+                    </div>
+                @endif
             </div>
         </div>
     </div>
     <div class="ui one column grid">
-        <div class="mobile tablet only column">
+        <div class="sixteen wide mobile only column">
             <div class="ui compact wrapping spaced buttons">
                 @foreach ($elements as $element)
                     {{-- "Three Dots" Separator --}}
