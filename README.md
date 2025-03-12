@@ -82,7 +82,7 @@ class AppServiceProvider extends ServiceProvider
 ```
 ## Publishing Views (Optional)
 > [!TIP]
-> All published views are located in `resources/views/vendor/pagination`
+> All published views are located in **`resources/views/vendor/pagination`**
 
 Follow this step only if you want to customize the view.
 #### [Fomantic UI](https://fomantic-ui.com/) (Semantic UI)
