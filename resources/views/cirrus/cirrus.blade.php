@@ -4,12 +4,12 @@
     <div class="u-flex u-justify-space-between u-flex-wrap">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
-            <button class="u-block btn--sm btn--disabled w-16 lg:w-auto @if ($darkMode) bg-dark text-white @endif"
+            <button class="u-block btn--sm btn--disabled w-16 sm:w-20p lg:w-auto @if ($darkMode) bg-dark text-white @endif"
                     aria-disabled="true">
                 {!! __('pagination.previous') !!}
             </button>
         @else
-            <a class="u-block btn btn--sm w-16 lg:w-auto @if ($darkMode) bg-dark text-white @endif"
+            <a class="u-block btn btn--sm w-16 sm:w-20p lg:w-auto @if ($darkMode) bg-dark text-white @endif"
                href="{{ $paginator->previousPageUrl() }}">
                 {!! __('pagination.previous') !!}
             </a>
@@ -17,12 +17,12 @@
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
-            <a class="u-block lg:u-none btn btn--sm w-16 @if ($darkMode) bg-dark text-white @endif"
+            <a class="u-block lg:u-none btn btn--sm w-16 sm:w-20p @if ($darkMode) bg-dark text-white @endif"
                href="{{ $paginator->nextPageUrl() }}">
                 {!! __('pagination.next') !!}
             </a>
         @else
-            <button class="u-block lg:u-none btn--sm btn--disabled w-16 @if ($darkMode) bg-dark text-white @endif"
+            <button class="u-block lg:u-none btn--sm btn--disabled w-16 sm:w-20p @if ($darkMode) bg-dark text-white @endif"
                     aria-disabled="true">
                 {!! __('pagination.next') !!}
             </button>
@@ -60,12 +60,12 @@
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
-            <a class="u-none lg:u-block btn btn--sm @if ($darkMode) bg-dark text-white @endif"
+            <a class="u-none lg:u-block btn btn--sm w-16 lg:w-auto @if ($darkMode) bg-dark text-white @endif"
                href="{{ $paginator->nextPageUrl() }}">
                 {!! __('pagination.next') !!}
             </a>
         @else
-            <button class="u-none lg:u-block btn--sm btn--disabled @if ($darkMode) bg-dark text-white @endif"
+            <button class="u-none lg:u-block btn--sm btn--disabled w-16 lg:w-auto @if ($darkMode) bg-dark text-white @endif"
                     aria-disabled="true">
                 {!! __('pagination.next') !!}
             </button>
